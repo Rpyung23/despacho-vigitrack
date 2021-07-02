@@ -1,0 +1,679 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Vigitrack Cia.Ldta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="../public/assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="../public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../public/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../public/assets/css/metisMenu.css">
+    <link rel="stylesheet" href="../public/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../public/assets/css/slicknav.min.css">
+    <!-- amchart css -->
+
+
+
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <!-- others css -->
+    <link rel="stylesheet" href="../public/assets/css/typography.css">
+    <link rel="stylesheet" href="../public/assets/css/default-css.css">
+    <link rel="stylesheet" href="../public/assets/css/styles.css">
+    <link rel="stylesheet" href="../public/assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="../public/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+
+<body style="overflow: hidden;">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- preloader area start -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+        <!-- sidebar menu area start -->
+        <div class="sidebar-menu">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <a href="index.html"><img src="../public/assets/images/icon/logo.png" alt="logo"></a>
+                </div>
+            </div>
+            <div class="main-menu">
+                <div class="menu-inner">
+                    <nav>
+                        <ul class="metismenu" id="menu">
+                            <li class="active">
+                                <a href="index.html" aria-expanded="true"><i class="ti-dashboard"></i><span>Monitoreo</span></a>
+                                <!--<ul class="collapse">
+                                    <li class="active"><a href="index.html">ICO dashboard</a></li>
+                                </ul>-->
+                            </li>
+
+                            <li>
+                                <a href="../public/pages/unidades.html" aria-expanded="true"><i
+                                        class="fa fa-bus"></i><span>Unidades
+                                    </span></a>
+                                <!--<ul class="collapse">
+                                    <li><a href="index.html">Left Sidebar</a></li>
+                                    <li><a href="index3-horizontalmenu.html">Horizontal Sidebar</a></li>
+                                </ul>-->
+                            </li>
+                            <li>
+                                <a href="../public/pages/propietarios.html" aria-expanded="true"><i
+                                        class="ti-user"></i><span>Propietarios</span></a>
+                            </li>
+
+
+                            <li>
+                                <a href="../public/pages/rutas-frecuencias.html" aria-expanded="true"><i class="ti-palette"></i><span>Rutas y Frecuencias</span></a>
+
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-slice"></i><span>icons</span></a>
+                                <ul class="collapse">
+                                    <li><a href="fontawesome.html">fontawesome icons</a></li>
+                                    <li><a href="themify.html">themify icons</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-table"></i>
+                                    <span>Tables</span></a>
+                                <ul class="collapse">
+                                    <li><a href="table-basic.html">basic table</a></li>
+                                    <li><a href="table-layout.html">table layout</a></li>
+                                    <li><a href="datatable.html">datatable</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="maps.html"><i class="ti-map-alt"></i> <span>maps</span></a></li>
+                            <li><a href="invoice.html"><i class="ti-receipt"></i> <span>Invoice Summary</span></a></li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layers-alt"></i> <span>Pages</span></a>
+                                <ul class="collapse">
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="login2.html">Login 2</a></li>
+                                    <li><a href="login3.html">Login 3</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                    <li><a href="register2.html">Register 2</a></li>
+                                    <li><a href="register3.html">Register 3</a></li>
+                                    <li><a href="register4.html">Register 4</a></li>
+                                    <li><a href="screenlock.html">Lock Screen</a></li>
+                                    <li><a href="screenlock2.html">Lock Screen 2</a></li>
+                                    <li><a href="reset-pass.html">reset password</a></li>
+                                    <li><a href="pricing.html">Pricing</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-exclamation-triangle"></i>
+                                    <span>Error</span></a>
+                                <ul class="collapse">
+                                    <li><a href="404.html">Error 404</a></li>
+                                    <li><a href="403.html">Error 403</a></li>
+                                    <li><a href="500.html">Error 500</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-align-left"></i> <span>Multi
+                                        level menu</span></a>
+                                <ul class="collapse">
+                                    <li><a href="#">Item level (1)</a></li>
+                                    <li><a href="#">Item level (1)</a></li>
+                                    <li><a href="#" aria-expanded="true">Item level (1)</a>
+                                        <ul class="collapse">
+                                            <li><a href="#">Item level (2)</a></li>
+                                            <li><a href="#">Item level (2)</a></li>
+                                            <li><a href="#">Item level (2)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Item level (1)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar menu area end -->
+        <!-- main content area start -->
+        <div class="main-content">
+            <!-- header area start -->
+            <div class="header-area">
+                <div class="row align-items-center align-space-between-header-nav">
+                    <!-- nav and search button col-md-6 col-sm-8 clearfix -->
+                    <div class="">
+                        <div class="nav-btn pull-left">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="title-header-nav">
+                        <h3 class="title-proyect">Gestión Inteligente de Transporte Urbano</h3>
+                        <h4 id="_reloj"><strong>00:00:00</strong></h4>
+                    </div>
+
+                    <!-- profile info & task notification col-md-6 col-sm-4 clearfix-->
+                    <div class="" style="margin-right: 1rem;">
+                        <ul class="notification-area pull-right">
+                            <li id="full-view"><i class="ti-fullscreen"></i></li>
+                            <li id="full-view-exit"><i class="ti-zoom-out"></i></li>
+                            <li class="dropdown">
+                                <i class="ti-bell dropdown-toggle" data-toggle="dropdown">
+                                    <span>2</span>
+                                </i>
+                                <div class="dropdown-menu bell-notify-box notify-box">
+                                    <span class="notify-title">You have 3 new notifications <a href="#">view all</a></span>
+                                    <div class="nofity-list">
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
+                                            <div class="notify-text">
+                                                <p>You have Changed Your Password</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-comments-smiley btn-info"></i></div>
+                                            <div class="notify-text">
+                                                <p>New Commetns On Post</p>
+                                                <span>30 Seconds ago</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-primary"></i></div>
+                                            <div class="notify-text">
+                                                <p>Some special like you</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-comments-smiley btn-info"></i></div>
+                                            <div class="notify-text">
+                                                <p>New Commetns On Post</p>
+                                                <span>30 Seconds ago</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-primary"></i></div>
+                                            <div class="notify-text">
+                                                <p>Some special like you</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
+                                            <div class="notify-text">
+                                                <p>You have Changed Your Password</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
+                                            <div class="notify-text">
+                                                <p>You have Changed Your Password</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <i class="fa fa-envelope-o dropdown-toggle" data-toggle="dropdown"><span>3</span></i>
+                                <div class="dropdown-menu notify-box nt-enveloper-box">
+                                    <span class="notify-title">You have 3 new notifications <a href="#">view all</a></span>
+                                    <div class="nofity-list">
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="../public/assets/images/author/author-img1.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">Hey I am waiting for you...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="../public/assets/images/author/author-img2.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">When you can connect with me...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="../public/assets/images/author/author-img3.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">I missed you so much...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="../public/assets/images/author/author-img4.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">Your product is completely Ready...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="../public/assets/images/author/author-img2.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">Hey I am waiting for you...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="../public/assets/images/author/author-img1.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">Hey I am waiting for you...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb">
+                                                <img src="../public/assets/images/author/author-img3.jpg" alt="image">
+                                            </div>
+                                            <div class="notify-text">
+                                                <p>Aglae Mayer</p>
+                                                <span class="msg">Hey I am waiting for you...</span>
+                                                <span>3:15 PM</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="settings-btn">
+                                <i class="ti-settings"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- header area end -->
+
+
+            <div class="main-content-inner">
+
+
+                <!-- Google Map -->
+                <div id="google_map" class="container-mapa-google">
+
+                </div>
+
+
+                <!--Leyenda-->
+
+
+                <div class="container-leyenda">
+
+
+
+
+                    <div class="card-leyenda">
+                        <ul id="ul_lista-leyenda" class="lista-leyenda lista-leyenda-inactive">
+                            <li><img src="../public/assets/images/monitoreo/autobus_online_leyenda.png"><label class="tooltip-leyenda tooltip-color-online">En linea</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_apagado_leyenda.png"><label class="tooltip-leyenda tooltip-color-apagado">Apagado</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_detenido_leyenda.png"><label class="tooltip-leyenda tooltip-color-detenido">Detenido</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_alerta_leyenda.png"><label class="tooltip-leyenda tooltip-color-alert">En Alerta</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_detenido_now_leyenda.png"><label class="tooltip-leyenda tooltip-color-sin-gps-now">Sin Gps</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_detenido_full_leyenda.png"><label class="tooltip-leyenda tooltip-sin-gps-full">Sin Transmisión</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_encendido_leyenda.png"><label class="tooltip-leyenda tooltip-color-encendido">Encendido</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_fuera_ruta_leyenda.png"><label class="tooltip-leyenda tooltip-color-fuera-ruta">Fuera de Ruta</label></li>
+
+                        </ul>
+
+                        <div id="floating_action_button_more" class="floating_action_button">
+                            <i class="fa fa-plus"></i>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div class="container-opciones-mapa" role="group" aria-label="First group">
+
+
+                    <ul class="lu-container-tabs">
+                        <li id="tabs-unidades" class="li-border-inicial li-card-tab li-card-tab-active"><i class="fa fa-bus"></i></li>
+                        <li id="tabs-geocercas" class="li-card-tab"><i class="fa fa-object-ungroup"></i></li>
+                        <li id="tabs-opc-lineas-rutas" class="li-border-final li-card-tab"><i class="fa fa-map-o"></i></li>
+                    </ul>
+                    <!--<button type="button" class="btn btn-light">1</button>
+                    <button type="button" class="btn btn-light">2</button>
+                    <button type="button" class="btn btn-light">3</button>
+                    <button type="button" class="btn btn-light">4</button>-->
+                </div>
+
+                <!-- UNIDADES -->
+
+                <div id="container-details-tab-unidades" class="container-map-rastreo container-map-rastreo-active">
+
+
+                    <header class="header-opc-map">
+
+                        <div class="top-unidades">
+                            <label>Unidades</label>
+                            <button id="btn_close_unidades" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                        </div>
+
+                        <div class="elements-top-unidades">
+                            <input class="input-busqueda-rapida" type="text" placeholder="Busqueda rápida">
+                            <i class="btnSearch-busqueda-rapida fa fa-search"></i>
+                        </div>
+                    </header>
+
+                    <div class="list-unidades-rastreo">
+                        <ul id="ul_unidades_rastreo">
+                            <li class="li-bus" unidad="all_unidades">
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <!-- GEOCERCAS -->
+
+
+
+                <div id="container-details-tab-geocerca" class="container-map-rastreo container-map-rastreo-inactive">
+
+
+                    <header class="header-opc-map">
+
+                        <div class="top-unidades">
+                            <label>Geocercas</label>
+                            <button id="btn_close_geocoder" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                        </div>
+
+                        <div class="elements-top-unidades">
+                            <input class="inputCheck-busqueda-rapida" type="checkbox">
+                            <input class="input-busqueda-rapida" type="text" placeholder="Busqueda rápida">
+                            <i class="btnSearch-busqueda-rapida fa fa-search"></i>
+                        </div>
+                    </header>
+
+                    <div class="list-unidades-rastreo">
+                        <ul id="ul_geocercas_rastreo">
+
+
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+                <!-- LINEAS -->
+
+
+                <div id="container-details-tab-lineas-rutas" class="container-map-rastreo container-map-rastreo-inactive">
+
+
+                    <header class="header-opc-map">
+
+                        <div class="top-unidades">
+                            <label>Lineas - Rutas</label>
+                            <button id="btn_close_lineas_rutas" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                        </div>
+
+                        <div class="elements-top-unidades">
+                            <!--<input class="inputCheck-busqueda-rapida" type="checkbox">
+                            --><input class="input-busqueda-rapida" type="text" placeholder="Busqueda rápida">
+                            <i class="btnSearch-busqueda-rapida fa fa-search"></i>
+                        </div>
+                    </header>
+
+                    <div class="list-lineas-rutas">
+                        <ul id="ul_lineas_rutas">
+
+
+                        </ul>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <!-- main content area end -->
+    </div>
+    <!-- page container area end -->
+    <!-- offset area start -->
+    <div class="offset-area ">
+        <div class="offset-close "><i class="ti-close "></i></div>
+        <ul class="nav offset-menu-tab ">
+            <li><a class="active " data-toggle="tab " href="#activity ">Activity</a></li>
+            <li><a data-toggle="tab " href="#settings ">Settings</a></li>
+        </ul>
+        <div class="offset-content tab-content ">
+            <div id="activity " class="tab-pane fade in show active ">
+                <div class="recent-activity ">
+                    <div class="timeline-task ">
+                        <div class="icon bg1 ">
+                            <i class="fa fa-envelope "></i>
+                        </div>
+                        <div class="tm-title ">
+                            <h4>Rashed sent you an email</h4>
+                            <span class="time "><i class="ti-time "></i>09:35</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
+                        </p>
+                    </div>
+                    <div class="timeline-task ">
+                        <div class="icon bg2 ">
+                            <i class="fa fa-check "></i>
+                        </div>
+                        <div class="tm-title ">
+                            <h4>Added</h4>
+                            <span class="time "><i class="ti-time "></i>7 Minutes Ago</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                    </div>
+                    <div class="timeline-task ">
+                        <div class="icon bg2 ">
+                            <i class="fa fa-exclamation-triangle "></i>
+                        </div>
+                        <div class="tm-title ">
+                            <h4>You missed you Password!</h4>
+                            <span class="time "><i class="ti-time "></i>09:20 Am</span>
+                        </div>
+                    </div>
+                    <div class="timeline-task ">
+                        <div class="icon bg3 ">
+                            <i class="fa fa-bomb "></i>
+                        </div>
+                        <div class="tm-title ">
+                            <h4>Member waiting for you Attention</h4>
+                            <span class="time "><i class="ti-time "></i>09:35</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
+                        </p>
+                    </div>
+                    <div class="timeline-task ">
+                        <div class="icon bg3 ">
+                            <i class="ti-signal "></i>
+                        </div>
+                        <div class="tm-title ">
+                            <h4>You Added Kaji Patha few minutes ago</h4>
+                            <span class="time "><i class="ti-time "></i>01 minutes ago</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
+                        </p>
+                    </div>
+                    <div class="timeline-task ">
+                        <div class="icon bg1 ">
+                            <i class="fa fa-envelope "></i>
+                        </div>
+                        <div class="tm-title ">
+                            <h4>Ratul Hamba sent you an email</h4>
+                            <span class="time "><i class="ti-time "></i>09:35</span>
+                        </div>
+                        <p>Hello sir , where are you, i am egerly waiting for you.
+                        </p>
+                    </div>
+                    <div class="timeline-task ">
+                        <div class="icon bg2 ">
+                            <i class="fa fa-exclamation-triangle "></i>
+                        </div>
+                        <div class="tm-title ">
+                            <h4>Rashed sent you an email</h4>
+                            <span class="time "><i class="ti-time "></i>09:35</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
+                        </p>
+                    </div>
+                    <div class="timeline-task ">
+                        <div class="icon bg2 ">
+                            <i class="fa fa-exclamation-triangle "></i>
+                        </div>
+                        <div class="tm-title ">
+                            <h4>Rashed sent you an email</h4>
+                            <span class="time "><i class="ti-time "></i>09:35</span>
+                        </div>
+                    </div>
+                    <div class="timeline-task ">
+                        <div class="icon bg3 ">
+                            <i class="fa fa-bomb "></i>
+                        </div>
+                        <div class="tm-title ">
+                            <h4>Rashed sent you an email</h4>
+                            <span class="time "><i class="ti-time "></i>09:35</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
+                        </p>
+                    </div>
+                    <div class="timeline-task ">
+                        <div class="icon bg3 ">
+                            <i class="ti-signal "></i>
+                        </div>
+                        <div class="tm-title ">
+                            <h4>Rashed sent you an email</h4>
+                            <span class="time "><i class="ti-time "></i>09:35</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio itaque at.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="settings " class="tab-pane fade ">
+                <div class="offset-settings ">
+                    <h4>General Settings</h4>
+                    <div class="settings-list ">
+                        <div class="s-settings ">
+                            <div class="s-sw-title ">
+                                <h5>Notifications</h5>
+                                <div class="s-swtich ">
+                                    <input type="checkbox " id="switch1 " />
+                                    <label for="switch1 ">Toggle</label>
+                                </div>
+                            </div>
+                            <p>Keep it 'On' When you want to get all the notification.</p>
+                        </div>
+                        <div class="s-settings ">
+                            <div class="s-sw-title ">
+                                <h5>Show recent activity</h5>
+                                <div class="s-swtich ">
+                                    <input type="checkbox " id="switch2 " />
+                                    <label for="switch2 ">Toggle</label>
+                                </div>
+                            </div>
+                            <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
+                        </div>
+                        <div class="s-settings ">
+                            <div class="s-sw-title ">
+                                <h5>Show your emails</h5>
+                                <div class="s-swtich ">
+                                    <input type="checkbox " id="switch3 " />
+                                    <label for="switch3 ">Toggle</label>
+                                </div>
+                            </div>
+                            <p>Show email so that easily find you.</p>
+                        </div>
+                        <div class="s-settings ">
+                            <div class="s-sw-title ">
+                                <h5>Show Task statistics</h5>
+                                <div class="s-swtich ">
+                                    <input type="checkbox " id="switch4 " />
+                                    <label for="switch4 ">Toggle</label>
+                                </div>
+                            </div>
+                            <p>The for attribute is necessary to bind our custom checkbox with the input.</p>
+                        </div>
+                        <div class="s-settings ">
+                            <div class="s-sw-title ">
+                                <h5>Notifications</h5>
+                                <div class="s-swtich ">
+                                    <input type="checkbox " id="switch5 " />
+                                    <label for="switch5 ">Toggle</label>
+                                </div>
+                            </div>
+                            <p>Use checkboxes when looking for yes or no answers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offset area end -->
+    <!-- jquery latest version -->
+    <script src="../public/assets/js/vendor/jquery-3.6.0.min.js "></script>
+    <!-- bootstrap 4 js -->
+    <script src="../public/assets/js/popper.min.js "></script>
+    <script src="../public/assets/js/bootstrap.min.js "></script>
+    <script src="../public/assets/js/owl.carousel.min.js "></script>
+    <script src="../public/assets/js/metisMenu.min.js "></script>
+    <script src="../public/assets/js/jquery.slimscroll.min.js "></script>
+    <script src="../public/assets/js/jquery.slicknav.min.js "></script>
+    <script src="../public/assets/js/plugins.js "></script>
+    <script src="../public/assets/js/scripts.js "></script>
+    <script src="../public/assets/js/maps.js "></script>
+    <script src="../public/assets/js/global/auto-timer.js"></script>
+    <script src="../public/assets/js/monitoreo/mapa-rastreo.js "></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzjTa1UiFlMW1A1w94K_gpqRX9MiarH1Y&callback=initMap&libraries=&v=weekly " async></script>
+
+
+
+</body>
+
+</html>
