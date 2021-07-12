@@ -30,16 +30,11 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 
-<body style="overflow: hidden;">
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <!-- preloader area start -->
+<body>
     <div id="preloader">
         <div class="loader"></div>
     </div>
-    <!-- preloader area end -->
-    <!-- page container area start -->
+
     <div class="page-container">
         <!-- sidebar menu area start -->
         <div class="sidebar-menu">
@@ -61,17 +56,14 @@
 
                             <li>
                                 <a href="../public/pages/unidades.html" aria-expanded="true"><i
-                                        class="fa fa-bus"></i><span>Unidades
+                                        class="fa fa-bus"></i><span>Flota Vehicular
                                     </span></a>
                                 <!--<ul class="collapse">
                                     <li><a href="index.html">Left Sidebar</a></li>
                                     <li><a href="index3-horizontalmenu.html">Horizontal Sidebar</a></li>
                                 </ul>-->
                             </li>
-                            <li>
-                                <a href="../public/pages/propietarios.html" aria-expanded="true"><i
-                                        class="ti-user"></i><span>Propietarios</span></a>
-                            </li>
+
 
 
                             <li>
@@ -322,11 +314,125 @@
                 <!-- Google Map -->
                 <div id="google_map" class="container-mapa-google">
 
+
+
                 </div>
 
 
-                <!--Leyenda-->
 
+                <div class="container-right-tabs-mapa">
+
+
+
+                    <div class="container-opciones-mapa2" role="group" aria-label="First group">
+
+
+                        <ul class="lu-container-tabs">
+                            <li id="tabs-unidades" class="li-border-inicial li-card-tab li-card-tab-active"><i class="fa fa-bus"></i></li>
+                            <li id="tabs-geocercas" class="li-card-tab"><i class="fa fa-object-ungroup"></i></li>
+                            <li id="tabs-opc-lineas-rutas" class="li-border-final li-card-tab"><i class="fa fa-map-o"></i></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- UNIDADES -->
+
+
+                    <div id="container-details-tab-unidades" class="container-map-rastreo2 container-map-rastreo-active">
+
+
+                        <header class="header-opc-map">
+
+                            <div class="top-unidades">
+                                <label>Unidades</label>
+                                <button id="btn_close_unidades" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+
+                            <div class="elements-top-unidades">
+                                <input class="input-busqueda-rapida" type="text" placeholder="Busqueda rápida">
+                                <i class="btnSearch-busqueda-rapida fa fa-search"></i>
+                            </div>
+                        </header>
+
+                        <div class="list-unidades-rastreo">
+                            <ul id="ul_unidades_rastreo">
+                                <li class="li-bus" unidad="all_unidades">
+
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- GEOCERCAS -->
+
+
+                    <div id="container-details-tab-geocerca" class="container-map-rastreo2 container-map-rastreo-inactive">
+
+
+                        <header class="header-opc-map">
+
+                            <div class="top-unidades">
+                                <label>Geocercas</label>
+                                <button id="btn_close_geocoder" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+
+                            <div class="elements-top-unidades">
+                                <input class="inputCheck-busqueda-rapida" type="checkbox">
+                                <input class="input-busqueda-rapida" type="text" placeholder="Busqueda rápida">
+                                <i class="btnSearch-busqueda-rapida fa fa-search"></i>
+                            </div>
+                        </header>
+
+                        <div class="list-unidades-rastreo">
+                            <ul id="ul_geocercas_rastreo">
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- LINEAS -->
+
+
+                    <div id="container-details-tab-lineas-rutas" class="container-map-rastreo2 container-map-rastreo-inactive">
+
+
+                        <header class="header-opc-map">
+
+                            <div class="top-unidades">
+                                <label>Lineas - Rutas</label>
+                                <button id="btn_close_lineas_rutas" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+
+                            <div class="elements-top-unidades">
+                                <input class="input-busqueda-rapida" type="text" placeholder="Busqueda rápida">
+                                <i class="btnSearch-busqueda-rapida fa fa-search"></i>
+                            </div>
+                        </header>
+
+                        <div class="list-lineas-rutas">
+                            <ul id="ul_lineas_rutas">
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+                <!--Leyenda-->
 
                 <div class="container-leyenda">
 
@@ -334,6 +440,8 @@
 
 
                     <div class="card-leyenda">
+
+                        <!-- -->
                         <ul id="ul_lista-leyenda" class="lista-leyenda lista-leyenda-inactive">
                             <li><img src="../public/assets/images/monitoreo/autobus_online_leyenda.png"><label class="tooltip-leyenda tooltip-color-online">En linea</label></li>
                             <li><img src="../public/assets/images/monitoreo/autobus_apagado_leyenda.png"><label class="tooltip-leyenda tooltip-color-apagado">Apagado</label></li>
@@ -359,115 +467,9 @@
 
 
 
-                <div class="container-opciones-mapa" role="group" aria-label="First group">
-
-
-                    <ul class="lu-container-tabs">
-                        <li id="tabs-unidades" class="li-border-inicial li-card-tab li-card-tab-active"><i class="fa fa-bus"></i></li>
-                        <li id="tabs-geocercas" class="li-card-tab"><i class="fa fa-object-ungroup"></i></li>
-                        <li id="tabs-opc-lineas-rutas" class="li-border-final li-card-tab"><i class="fa fa-map-o"></i></li>
-                    </ul>
-                    <!--<button type="button" class="btn btn-light">1</button>
-                    <button type="button" class="btn btn-light">2</button>
-                    <button type="button" class="btn btn-light">3</button>
-                    <button type="button" class="btn btn-light">4</button>-->
-                </div>
-
-                <!-- UNIDADES -->
-
-                <div id="container-details-tab-unidades" class="container-map-rastreo container-map-rastreo-active">
-
-
-                    <header class="header-opc-map">
-
-                        <div class="top-unidades">
-                            <label>Unidades</label>
-                            <button id="btn_close_unidades" type="button" class="close" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                        </div>
-
-                        <div class="elements-top-unidades">
-                            <input class="input-busqueda-rapida" type="text" placeholder="Busqueda rápida">
-                            <i class="btnSearch-busqueda-rapida fa fa-search"></i>
-                        </div>
-                    </header>
-
-                    <div class="list-unidades-rastreo">
-                        <ul id="ul_unidades_rastreo">
-                            <li class="li-bus" unidad="all_unidades">
-
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-
-
-                <!-- GEOCERCAS -->
 
 
 
-                <div id="container-details-tab-geocerca" class="container-map-rastreo container-map-rastreo-inactive">
-
-
-                    <header class="header-opc-map">
-
-                        <div class="top-unidades">
-                            <label>Geocercas</label>
-                            <button id="btn_close_geocoder" type="button" class="close" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                        </div>
-
-                        <div class="elements-top-unidades">
-                            <input class="inputCheck-busqueda-rapida" type="checkbox">
-                            <input class="input-busqueda-rapida" type="text" placeholder="Busqueda rápida">
-                            <i class="btnSearch-busqueda-rapida fa fa-search"></i>
-                        </div>
-                    </header>
-
-                    <div class="list-unidades-rastreo">
-                        <ul id="ul_geocercas_rastreo">
-
-
-                        </ul>
-                    </div>
-
-                </div>
-
-
-
-                <!-- LINEAS -->
-
-
-                <div id="container-details-tab-lineas-rutas" class="container-map-rastreo container-map-rastreo-inactive">
-
-
-                    <header class="header-opc-map">
-
-                        <div class="top-unidades">
-                            <label>Lineas - Rutas</label>
-                            <button id="btn_close_lineas_rutas" type="button" class="close" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                        </div>
-
-                        <div class="elements-top-unidades">
-                            <!--<input class="inputCheck-busqueda-rapida" type="checkbox">
-                            --><input class="input-busqueda-rapida" type="text" placeholder="Busqueda rápida">
-                            <i class="btnSearch-busqueda-rapida fa fa-search"></i>
-                        </div>
-                    </header>
-
-                    <div class="list-lineas-rutas">
-                        <ul id="ul_lineas_rutas">
-
-
-                        </ul>
-                    </div>
-
-                </div>
 
 
 

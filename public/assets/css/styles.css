@@ -65,6 +65,23 @@
     left: 88%;
 }
 
+.container-opciones-mapa2 {
+    /*background-color: white;
+    border-radius: 0.5rem;
+    border-top-color: #303641 !important;
+    border-top-width: 0.5rem !important;
+    border-style: solid;
+    border-color: transparent;*/
+    /*height: 87%;*/
+    /*min-width: 18rem;
+    max-width: 18rem;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+}
+
 .container-map-rastreo {
     position: absolute;
     background-color: white;
@@ -80,12 +97,39 @@
     left: 77.5%;
 }
 
+.container-map-rastreo2 {
+    position: absolute;
+    background-color: white;
+    border-radius: 0.2rem;
+    border-color: transparent;
+    border-width: 0;
+    border-style: solid;
+    min-width: 18rem;
+    max-width: 18rem;
+    height: 92%;
+    padding: 0;
+}
+
 .container-map-rastreo-inactive {
     clip-path: inset(0 0 100% 0);
 }
 
 .container-map-rastreo-active {
     clip-path: inset(0 0 0 0);
+}
+
+.container-right-tabs-mapa {
+    background-color: transparent;
+    border-radius: 0.2rem;
+    border-color: transparent;
+    border-width: 0;
+    border-style: solid;
+    position: fixed;
+    top: 10%;
+    height: 89vh;
+    width: 18rem;
+    z-index: 9;
+    left: 78%;
 }
 
 .header-opc-map {
@@ -114,7 +158,7 @@
 }
 
 .list-unidades-rastreo {
-    height: 85.15%;
+    min-height: 100%;
     overflow-y: scroll;
 }
 
@@ -330,11 +374,13 @@ ul {
     z-index: 9999999;
     background-color: transparent;
     left: 0.5rem;
-    top: 50%;
+    top: 90%;
 }
 
 .lista-leyenda {
-    transition: all 2s ease-in;
+    position: absolute;
+    top: -17rem;
+    width: 12rem;
 }
 
 .lista-leyenda-inactive {

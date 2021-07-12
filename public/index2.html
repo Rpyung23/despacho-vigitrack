@@ -3,87 +3,78 @@
 
 <head>
     <meta charset="utf-8">
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
     <title>Vigitrack Cia.Ldta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="../assets/images/icon/favicon.ico">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/css/themify-icons.css">
-    <link rel="stylesheet" href="../assets/css/metisMenu.css">
-    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../assets/css/slicknav.min.css">
+    <link rel="shortcut icon" type="image/png" href="../public/assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="../public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../public/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../public/assets/css/metisMenu.css">
+    <link rel="stylesheet" href="../public/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../public/assets/css/slicknav.min.css">
     <!-- amchart css -->
+
+
+
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-
-
-    <!-- Start datatable css -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.jqueryui.min.css">
-
-
     <!-- others css -->
-    <link rel="stylesheet" href="../assets/css/typography.css">
-    <link rel="stylesheet" href="../assets/css/default-css.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../public/assets/css/typography.css">
+    <link rel="stylesheet" href="../public/assets/css/default-css.css">
+    <link rel="stylesheet" href="../public/assets/css/styles.css">
+    <link rel="stylesheet" href="../public/assets/css/responsive.css">
     <!-- modernizr css -->
-    <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../public/assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 
-<body style="overflow: hidden;">
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <!-- preloader area start -->
+<body>
     <div id="preloader">
         <div class="loader"></div>
     </div>
-    <!-- preloader area end -->
-    <!-- page container area start -->
+
     <div class="page-container">
         <!-- sidebar menu area start -->
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                    <a href="index.html"><img src="../assets/images/icon/logo.png" alt="logo"></a>
+                    <a href="index.html"><img src="../public/assets/images/icon/logo.png" alt="logo"></a>
                 </div>
             </div>
             <div class="main-menu">
                 <div class="menu-inner">
                     <nav>
                         <ul class="metismenu" id="menu">
-                            <li>
-                                <a href="../index.html" aria-expanded="true"><i
-                                        class="ti-dashboard"></i><span>Monitoreo</span></a>
+                            <li class="active">
+                                <a href="index.html" aria-expanded="true"><i class="ti-dashboard"></i><span>Monitoreo</span></a>
                                 <!--<ul class="collapse">
                                     <li class="active"><a href="index.html">ICO dashboard</a></li>
                                 </ul>-->
                             </li>
 
                             <li>
-                                <a href="../pages/unidades.html" aria-expanded="true"><i
-                                        class="fa fa-bus"></i><span>Flota Vehicular
+                                <a href="../public/pages/unidades.html" aria-expanded="true"><i
+                                        class="fa fa-bus"></i><span>Unidades
                                     </span></a>
                                 <!--<ul class="collapse">
                                     <li><a href="index.html">Left Sidebar</a></li>
                                     <li><a href="index3-horizontalmenu.html">Horizontal Sidebar</a></li>
                                 </ul>-->
                             </li>
+                            <li>
+                                <a href="../public/pages/propietarios.html" aria-expanded="true"><i
+                                        class="ti-user"></i><span>Propietarios</span></a>
+                            </li>
 
 
-
-                            <li class="active">
-                                <a href="../pages/rutas-frecuencias.html" aria-expanded="true"><i
-                                        class="ti-palette"></i><span>Rutas y Frecuencias</span></a>
+                            <li>
+                                <a href="../public/pages/rutas-frecuencias.html" aria-expanded="true"><i class="ti-palette"></i><span>Rutas y Frecuencias</span></a>
 
                             </li>
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i
-                                        class="ti-slice"></i><span>icons</span></a>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-slice"></i><span>icons</span></a>
                                 <ul class="collapse">
                                     <li><a href="fontawesome.html">fontawesome icons</a></li>
                                     <li><a href="themify.html">themify icons</a></li>
@@ -101,8 +92,7 @@
                             <li><a href="maps.html"><i class="ti-map-alt"></i> <span>maps</span></a></li>
                             <li><a href="invoice.html"><i class="ti-receipt"></i> <span>Invoice Summary</span></a></li>
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layers-alt"></i>
-                                    <span>Pages</span></a>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layers-alt"></i> <span>Pages</span></a>
                                 <ul class="collapse">
                                     <li><a href="login.html">Login</a></li>
                                     <li><a href="login2.html">Login 2</a></li>
@@ -118,8 +108,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i
-                                        class="fa fa-exclamation-triangle"></i>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-exclamation-triangle"></i>
                                     <span>Error</span></a>
                                 <ul class="collapse">
                                     <li><a href="404.html">Error 404</a></li>
@@ -128,8 +117,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-align-left"></i>
-                                    <span>Multi
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-align-left"></i> <span>Multi
                                         level menu</span></a>
                                 <ul class="collapse">
                                     <li><a href="#">Item level (1)</a></li>
@@ -153,7 +141,7 @@
         <!-- main content area start -->
         <div class="main-content">
             <!-- header area start -->
-            <div class="header-area2">
+            <div class="header-area">
                 <div class="row align-items-center align-space-between-header-nav">
                     <!-- nav and search button col-md-6 col-sm-8 clearfix -->
                     <div class="">
@@ -176,7 +164,7 @@
                         <ul class="notification-area pull-right">
                             <li id="full-view"><i class="ti-fullscreen"></i></li>
                             <li id="full-view-exit"><i class="ti-zoom-out"></i></li>
-                            <li class="dropdown" style="margin-right: 1.2rem;">
+                            <li class="dropdown">
                                 <i class="ti-bell dropdown-toggle" data-toggle="dropdown">
                                     <span>2</span>
                                 </i>
@@ -235,7 +223,6 @@
                                     </div>
                                 </div>
                             </li>
-                            <!--
                             <li class="dropdown">
                                 <i class="fa fa-envelope-o dropdown-toggle" data-toggle="dropdown"><span>3</span></i>
                                 <div class="dropdown-menu notify-box nt-enveloper-box">
@@ -316,7 +303,7 @@
                             </li>
                             <li class="settings-btn">
                                 <i class="ti-settings"></i>
-                            </li>-->
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -327,329 +314,169 @@
             <div class="main-content-inner">
 
 
-                <div class="col-12 mt-5" style="margin-top: 1.5rem !important;">
-                    <div class="card">
-                        <div class="card-body">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active show" id="rutas-tab" data-toggle="tab" href="#rutasTab" role="tab" aria-controls="home" aria-selected="true">Rutas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="frecuencias-tab" data-toggle="tab" href="#frecuenciasTab" role="tab" aria-controls="profile" aria-selected="false">Frecuencias</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="controles-tab" data-toggle="tab" href="#controlesTab" role="tab" aria-controls="contact" aria-selected="false">Controles</a>
+                <!-- Google Map -->
+                <div id="google_map" class="container-mapa-google">
+
+
+
+                </div>
+
+
+                <div class="container-right-tabs-mapa">
+
+
+
+                    <div class="container-opciones-mapa2" role="group" aria-label="First group">
+
+
+                        <ul class="lu-container-tabs">
+                            <li id="tabs-unidades" class="li-border-inicial li-card-tab li-card-tab-active"><i class="fa fa-bus"></i></li>
+                            <li id="tabs-geocercas" class="li-card-tab"><i class="fa fa-object-ungroup"></i></li>
+                            <li id="tabs-opc-lineas-rutas" class="li-border-final li-card-tab"><i class="fa fa-map-o"></i></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- UNIDADES -->
+
+
+                    <div id="container-details-tab-unidades" class="container-map-rastreo2 container-map-rastreo-active">
+
+
+                        <header class="header-opc-map">
+
+                            <div class="top-unidades">
+                                <label>Unidades</label>
+                                <button id="btn_close_unidades" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+
+                            <div class="elements-top-unidades">
+                                <input class="input-busqueda-rapida" type="text" placeholder="Busqueda rápida">
+                                <i class="btnSearch-busqueda-rapida fa fa-search"></i>
+                            </div>
+                        </header>
+
+                        <div class="list-unidades-rastreo">
+                            <ul id="ul_unidades_rastreo">
+                                <li class="li-bus" unidad="all_unidades">
+
                                 </li>
                             </ul>
-                            <div class="tab-content mt-3" id="myTabContent">
-                                <div class="tab-pane fade active show" id="rutasTab" role="tabpanel" aria-labelledby="rutas-tab">
-
-
-                                    <!-- Dark table start -->
-                                    <div class="">
-
-                                        <div class="container-table-header">
-
-                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterADDRUTA">
-                                                <i class="ti-plus"></i> Agregar Rutas
-                                            </button>
-
-                                            <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                                                <div class="btn-group mr-2" role="group" aria-label="First group">
-                                                    <button id="btn_info_unidad" type="button" class="btn btn-info"><i class="fa fa-info"> Info.</i></button>
-                                                    <button id="btn_edit_unidad" type="button" class="btn btn-primary"><i class="fa fa-edit"> Editar</i></button>
-                                                    <button id="btn_delete_unidad" type="button" class="btn btn-danger"><i class="fa fa-close"> Eliminar</i></button>
-
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                        <br>
-
-
-
-
-                                        <div class="data-tables datatable-dark">
-                                            <div class="table-responsive">
-                                                <table id="dataTable3" class="table table-hover progress-table text-center" style="width: 100% !important;">
-                                                    <thead class="text-capitalize">
-                                                        <tr>
-                                                            <th>Código</th>
-                                                            <th>Descripción</th>
-                                                            <th>Letra</th>
-                                                            <th>Terminal</th>
-                                                            <th>Primera Salida</th>
-                                                            <th>Finalización</th>
-                                                            <th>Intervalo Salida</th>
-                                                            <th>Estado</th>
-
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-
-                                                        <tr>
-                                                            <td>Airi Satou</td>
-                                                            <td>Accountant</td>
-                                                            <td>Tokyo</td>
-                                                            <td>33</td>
-                                                            <td>2008/11/28</td>
-                                                            <td>$162,700</td>
-                                                            <td>$162,700</td>
-
-                                                            <td>$162,700</td>
-
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div><br>
-                                    <!-- Dark table end -->
-
-
-                                </div>
-                                <div class="tab-pane fade" id="frecuenciasTab" role="tabpanel" aria-labelledby="frecuencias-tab">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta doloribus, ullam, ut obcaecati laboriosam eos, officia dolores voluptatum quas impedit placeat cumque animi quos odio quibusdam voluptatibus magnam
-                                        minima facilis necessitatibus libero! Error velit veritatis veniam ipsa? Reiciendis quas qui neque atque repudiandae quidem incidunt, a consectetur ipsam impedit.
-                                    </p>
-                                </div>
-                                <div class="tab-pane fade" id="controlesTab" role="tabpanel" aria-labelledby="controles-tab">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta doloribus, ullam, ut obcaecati laboriosam eos, officia dolores voluptatum quas impedit placeat cumque animi quos odio quibusdam voluptatibus magnam
-                                        minima facilis necessitatibus libero! Error velit veritatis veniam ipsa? Reiciendis quas qui neque atque repudiandae quidem incidunt, a consectetur ipsam impedit.
-                                    </p>
-                                </div>
-                            </div>
                         </div>
+
                     </div>
-                </div>
 
-            </div>
+                    <!-- GEOCERCAS -->
 
 
-            <!-- MODAL ADD RUTA -->
+                    <div id="container-details-tab-geocerca" class="container-map-rastreo2 container-map-rastreo-inactive">
 
-            <div class="modal fade" id="exampleModalCenterADDRUTA" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Registro de Ruta</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                        <header class="header-opc-map">
+
+                            <div class="top-unidades">
+                                <label>Geocercas</label>
+                                <button id="btn_close_geocoder" type="button" class="close" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
-                            </button>
+                              </button>
+                            </div>
+
+                            <div class="elements-top-unidades">
+                                <input class="inputCheck-busqueda-rapida" type="checkbox">
+                                <input class="input-busqueda-rapida" type="text" placeholder="Busqueda rápida">
+                                <i class="btnSearch-busqueda-rapida fa fa-search"></i>
+                            </div>
+                        </header>
+
+                        <div class="list-unidades-rastreo">
+                            <ul id="ul_geocercas_rastreo">
+
+
+                            </ul>
                         </div>
-                        <div class="modal-body">
-                            <form class="needs-validation" novalidate="">
-                                <div class="form-row">
 
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom04">ID</label>
-                                        <input type="text" class="form-control" id="validationCustom04" placeholder="State" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid state.
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 mb-3">
-                                        <label for="validationCustom03">Descripción</label>
-                                        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid city.
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom05">Letra</label>
-                                        <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid zip.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-
-
-                                    <div class="col-md-3 mb-3">
-                                        <label>Terminal</label>
-                                        <select class="custom-select">
-                                            <option selected="selected">----------------</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="col-md-3 mb-3">
-                                        <label>Estado</label>
-                                        <select class="custom-select">
-                                            <option selected="selected">----</option>
-                                            <option value="1">Activo</option>
-                                            <option value="2">Inactivo</option>
-                                        
-                                        </select>
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom05">Color</label>
-                                        <input type="color" class="form-control" style="height: 58% !important;" id="validationCustom05" placeholder="Color" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid zip.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom05">Transparencia</label>
-                                        <input type="number" class="form-control" id="validationCustom05" min="0" max="100" placeholder="0%" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid zip.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom04">Intervalo</label>
-                                        <input type="text" class="form-control" id="validationCustom04" placeholder="0" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid state.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <label for="validationCustom04">Primera Salida</label>
-                                        <input type="time" step="1" class="form-control" id="validationCustom04" placeholder="State" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid state.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <label for="validationCustom05">Finalización</label>
-                                        <input type="time" step="1" class="form-control" id="validationCustom05" placeholder="Zip" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid zip.
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-primary">Guardar Ruta</button>
-                        </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- MODAL EDITAR RUTA -->
+                    <!-- LINEAS -->
 
-            <div class="modal fade" id="exampleModalCenterEDITARRUTA" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Editar Ruta JO</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
+
+                    <div id="container-details-tab-lineas-rutas" class="container-map-rastreo2 container-map-rastreo-inactive">
+
+
+                        <header class="header-opc-map">
+
+                            <div class="top-unidades">
+                                <label>Lineas - Rutas</label>
+                                <button id="btn_close_lineas_rutas" type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+
+                            <div class="elements-top-unidades">
+                                <input class="input-busqueda-rapida" type="text" placeholder="Busqueda rápida">
+                                <i class="btnSearch-busqueda-rapida fa fa-search"></i>
+                            </div>
+                        </header>
+
+                        <div class="list-lineas-rutas">
+                            <ul id="ul_lineas_rutas">
+
+
+                            </ul>
                         </div>
-                        <div class="modal-body">
-                            <form class="needs-validation" novalidate="">
-                                <div class="form-row">
 
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom04">ID</label>
-                                        <input type="text" class="form-control" id="validationCustom04" placeholder="State" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid state.
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 mb-3">
-                                        <label for="validationCustom03">Descripción</label>
-                                        <input type="text" class="form-control" id="validationCustom03" placeholder="City" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid city.
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom05">Letra</label>
-                                        <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid zip.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-
-
-                                    <div class="col-md-3 mb-3">
-                                        <label>Terminal</label>
-                                        <select class="custom-select">
-                                                        <option selected="selected">----------------</option>
-                                                        <option value="1">One</option>
-                                                        <option value="2">Two</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
-                                    </div>
-
-                                    <div class="col-md-3 mb-3">
-                                        <label>Estado</label>
-                                        <select class="custom-select">
-                                                        <option selected="selected">----</option>
-                                                        <option value="1">Activo</option>
-                                                        <option value="2">Inactivo</option>
-                                                    
-                                                    </select>
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom05">Color</label>
-                                        <input type="color" class="form-control" style="height: 58% !important;" id="validationCustom05" placeholder="Color" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid zip.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom05">Transparencia</label>
-                                        <input type="number" class="form-control" id="validationCustom05" min="0" max="100" placeholder="0%" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid zip.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-md-3 mb-3">
-                                        <label for="validationCustom04">Intervalo</label>
-                                        <input type="text" class="form-control" id="validationCustom04" placeholder="0" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid state.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <label for="validationCustom04">Primera Salida</label>
-                                        <input type="time" step="1" class="form-control" id="validationCustom04" placeholder="State" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid state.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <label for="validationCustom05">Finalización</label>
-                                        <input type="time" step="1" class="form-control" id="validationCustom05" placeholder="Zip" required="">
-                                        <div class="invalid-feedback">
-                                            Please provide a valid zip.
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-primary">Guardar Ruta</button>
-                        </div>
                     </div>
+
+
+
+
                 </div>
+
+                <!--Leyenda-->
+
+                <div class="container-leyenda">
+
+
+
+
+                    <div class="card-leyenda">
+
+                        <!-- -->
+                        <ul id="ul_lista-leyenda" class="lista-leyenda lista-leyenda-inactive">
+                            <li><img src="../public/assets/images/monitoreo/autobus_online_leyenda.png"><label class="tooltip-leyenda tooltip-color-online">En linea</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_apagado_leyenda.png"><label class="tooltip-leyenda tooltip-color-apagado">Apagado</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_detenido_leyenda.png"><label class="tooltip-leyenda tooltip-color-detenido">Detenido</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_alerta_leyenda.png"><label class="tooltip-leyenda tooltip-color-alert">En Alerta</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_detenido_now_leyenda.png"><label class="tooltip-leyenda tooltip-color-sin-gps-now">Sin Gps</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_detenido_full_leyenda.png"><label class="tooltip-leyenda tooltip-sin-gps-full">Sin Transmisión</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_encendido_leyenda.png"><label class="tooltip-leyenda tooltip-color-encendido">Encendido</label></li>
+                            <li><img src="../public/assets/images/monitoreo/autobus_fuera_ruta_leyenda.png"><label class="tooltip-leyenda tooltip-color-fuera-ruta">Fuera de Ruta</label></li>
+
+                        </ul>
+
+                        <div id="floating_action_button_more" class="floating_action_button">
+                            <i class="fa fa-plus"></i>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
             </div>
-
-
-
-
         </div>
         <!-- main content area end -->
     </div>
@@ -833,23 +660,22 @@
     </div>
     <!-- offset area end -->
     <!-- jquery latest version -->
-    <script src="../assets/js/vendor/jquery-3.6.0.min.js "></script>
+    <script src="../public/assets/js/vendor/jquery-3.6.0.min.js "></script>
     <!-- bootstrap 4 js -->
-    <script src="../assets/js/popper.min.js "></script>
-    <script src="../assets/js/bootstrap.min.js "></script>
-    <script src="../assets/js/owl.carousel.min.js "></script>
-    <script src="../assets/js/metisMenu.min.js "></script>
-    <script src="../assets/js/jquery.slimscroll.min.js "></script>
-    <script src="../assets/js/jquery.slicknav.min.js "></script>
-    <!-- Start datatable js -->
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
-    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-    <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+    <script src="../public/assets/js/popper.min.js "></script>
+    <script src="../public/assets/js/bootstrap.min.js "></script>
+    <script src="../public/assets/js/owl.carousel.min.js "></script>
+    <script src="../public/assets/js/metisMenu.min.js "></script>
+    <script src="../public/assets/js/jquery.slimscroll.min.js "></script>
+    <script src="../public/assets/js/jquery.slicknav.min.js "></script>
+    <script src="../public/assets/js/plugins.js "></script>
+    <script src="../public/assets/js/scripts.js "></script>
+    <script src="../public/assets/js/maps.js "></script>
+    <script src="../public/assets/js/global/auto-timer.js"></script>
+    <script src="../public/assets/js/monitoreo/mapa-rastreo.js "></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzjTa1UiFlMW1A1w94K_gpqRX9MiarH1Y&callback=initMap&libraries=&v=weekly " async></script>
 
-    <script src="../assets/js/plugins.js "></script>
-    <script src="../assets/js/scripts.js "></script>
 
 
 </body>

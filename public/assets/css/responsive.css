@@ -1,8 +1,18 @@
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+    .container-right-tabs-mapa {
+        left: 88%;
+    }
+}
+
+
 /* (1366x768) WXGA Display */
 
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
     .error-content {
         margin-top: 100px;
+    }
+    .container-right-tabs-mapa {
+        left: 82%;
     }
 }
 

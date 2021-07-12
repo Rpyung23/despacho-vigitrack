@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <title>Vigitrack Cia.Ldta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="../assets/images/icon/favicon.ico">
@@ -32,20 +32,26 @@
     <!-- modernizr css -->
     <script src="../assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <!-- sweetAlert -->
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script src="../assets/js/utils/alerts.js"></script>
+
+
 </head>
 
 <body style="overflow-x: hidden;">
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <!-- preloader area start -->
+
     <div id="preloader">
         <div class="loader"></div>
     </div>
-    <!-- preloader area end -->
-    <!-- page container area start -->
+
     <div class="page-container">
-        <!-- sidebar menu area start -->
+
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
@@ -65,16 +71,17 @@
                             </li>
                             <li class="active">
                                 <a href="../pages/unidades.html" aria-expanded="true"><i
-                                        class="fa fa-bus"></i><span>Unidades
+                                        class="fa fa-bus"></i><span>Flota Vehicular
                                     </span></a>
                                 <!--<ul class="collapse">
                                     <li><a href="index.html">Left Sidebar</a></li>
                                     <li><a href="index3-horizontalmenu.html">Horizontal Sidebar</a></li>
                                 </ul>-->
                             </li>
-                            <li>
-                                <a href="../pages/propietarios.html" aria-expanded="true"><i
-                                        class="ti-user"></i><span>Propietarios</span></a>
+                            <li class="">
+                                <a href="../pages/rutas-frecuencias.html" aria-expanded="true"><i
+                                        class="ti-palette"></i><span>Rutas y Frecuencias</span></a>
+
                             </li>
                             <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-palette"></i><span>UI
@@ -167,8 +174,7 @@
                 </div>
             </div>
         </div>
-        <!-- sidebar menu area end -->
-        <!-- main content area start -->
+
         <div class="main-content">
             <!-- header area start -->
             <div class="header-area2">
@@ -344,29 +350,29 @@
 
             <div class="main-content-inner">
 
-
-
-
-
-
-
-
-
                 <div class="col-12 mt-5" style="margin-top: 1.5rem !important;">
                     <div class="card">
                         <div class="card-body">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <ul class="nav nav-tabs" id="myTabs" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active show" id="rutas-tab" data-toggle="tab" href="#rutasTab" role="tab" aria-controls="home" aria-selected="true">Unidades</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="frecuencias-tab" data-toggle="tab" href="#frecuenciasTab" role="tab" aria-controls="profile" aria-selected="false">Grupos</a>
+                                    <a class="nav-link" id="grupos-tap" data-toggle="tab" href="#gruposTab" role="tab" aria-controls="profile" aria-selected="false">Grupos</a>
                                 </li>
-                                <!--<li class="nav-item">
-                                    <a class="nav-link" id="controles-tab" data-toggle="tab" href="#controlesTab" role="tab" aria-controls="contact" aria-selected="false">Controles</a>
-                                </li>-->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="controles-tab" data-toggle="tab" href="#propietariosTab" role="tab" aria-controls="contact" aria-selected="false">Propietarios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="controles-tab" data-toggle="tab" href="#userAdminTab" role="tab" aria-controls="contact" aria-selected="false">Usuarios Administrativos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="controles-tab" data-toggle="tab" href="#choferesCobradoresTab" role="tab" aria-controls="contact" aria-selected="false">Choferes y Cobradores</a>
+                                </li>
                             </ul>
+
                             <div class="tab-content mt-3" id="myTabContent">
+
                                 <div class="tab-pane fade active show" id="rutasTab" role="tabpanel" aria-labelledby="rutas-tab">
 
 
@@ -378,13 +384,22 @@
                                                 <div class="container-table-header">
 
                                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalAddUnidad"><i class="ti-plus"></i> Agregar Unidad</button>
+                                                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                                                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                                                            <button id="btn_info_unidad" type="button" class="btn btn-info"><i class="fa fa-info"> Info.</i></button>
+                                                            <button id="btn_edit_unidad" type="button" class="btn btn-primary"><i class="fa fa-edit"> Editar</i></button>
+                                                            <button id="btn_delete_unidad" type="button" class="btn btn-danger"><i class="fa fa-close"> Eliminar</i></button>
+
+                                                        </div>
+
+                                                    </div>
 
                                                 </div>
 
                                                 <br>
 
                                                 <div class="data-tables datatable-dark">
-                                                    <table id="dataTable3" class="text-center" style="width: 100% !important;">
+                                                    <table id="dataTable5" class="text-center" style="width: 100% !important;">
                                                         <thead class="text-capitalize">
                                                             <tr>
                                                                 <th>Unidad</th>
@@ -394,38 +409,11 @@
                                                                 <th>Informa.</th>
                                                                 <th>Estado</th>
                                                                 <th>Grupo</th>
-                                                                <th>Acciones</th>
+                                                                <!--<th>Acciones</th>-->
                                                             </tr>
                                                         </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Airi Satou</td>
-                                                                <td>Accountant</td>
-                                                                <td>Tokyo</td>
-                                                                <td>33</td>
-                                                                <td>2008/11/28</td>
-                                                                <td>$162,700</td>
-                                                                <td>$162,700</td>
-                                                                <td>
-                                                                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="display: flex;justify-content: flex-end;">
+                                                        <tbody id="tbody_unidades">
 
-                                                                        <div class="btn-group mr-2" role="group" aria-label="Second group">
-
-                                                                            <button type="button" class="btn btn-info btn-sm2"><i
-                                                                                class="ti-info-alt"
-                                                                                style="font-size: 1rem;"></i></button>
-                                                                            <button type="button" class="btn btn-primary btn-sm2"><i
-                                                                class="fa fa-edit"
-                                                                style="font-size: 1rem;"></i></button>
-                                                                            <button type="button" class="btn btn-danger btn-sm2"><i
-                                                                class="fa fa-trash-o"
-                                                                style="font-size: 1rem;"></i></button>
-
-                                                                        </div>
-
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -435,183 +423,482 @@
                                     <!-- Dark table end -->
 
                                 </div>
-                                <div class="tab-pane fade" id="frecuenciasTab" role="tabpanel" aria-labelledby="frecuencias-tab">
+
+                                <div class="tab-pane fade" id="gruposTab" role="tabpanel" aria-labelledby="frecuencias-tab">
+                                    <div class="tab-pane fade active show" id="rutasTab" role="tabpanel" aria-labelledby="rutas-tab">
+
+                                        <!-- Dark table start -->
+                                        <div class="col-12 mt-5" style="margin-top: 1.5rem !important;">
+                                            <div class="card">
+                                                <div class="card-body">
+
+                                                    <br>
+
+                                                    <div class="data-tables datatable-dark">
+                                                        <div class="table-responsive">
+                                                            <table id="table-grupos" class="table table-hover progress-table text-center" style="width: 100% !important;">
+
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div><br>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Dark table end -->
+                                </div>
+
+                                <div class="tab-pane fade" id="propietariosTab" role="tabpanel" aria-labelledby="controles-tab">
+                                    <div class="tab-pane fade active show" id="rutasTab" role="tabpanel" aria-labelledby="rutas-tab">
+
+                                        <!-- Dark table start -->
+                                        <div class="col-12 mt-5" style="margin-top: 1.5rem !important;">
+                                            <div class="card">
+                                                <div class="card-body">
+
+                                                    <div class="container-table-header">
+
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalAddGrupo"><i class="ti-plus"></i> Agregar Propietario</button>
+                                                        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                                                            <div class="btn-group mr-2" role="group" aria-label="First group">
+                                                                <button id="btn_info_propietario" type="button" class="btn btn-info"><i class="fa fa-info"> Info.</i></button>
+                                                                <button id="btn_edit_propietario" type="button" class="btn btn-primary"><i class="fa fa-edit"> Editar</i></button>
+                                                                <button id="btn_delete_propietario" type="button" class="btn btn-danger"><i class="fa fa-close"> Eliminar</i></button>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="data-tables datatable-dark">
+                                                        <table id="dataTable5" class="text-center" style="width: 100% !important;">
+                                                            <thead class="text-capitalize">
+                                                                <tr>
+                                                                    <th>Código</th>
+                                                                    <th>Nombres y Apellidos</th>
+                                                                    <th>Usuario</th>
+                                                                    <th>Contraseña</th>
+                                                                    <th>Nivel de Accesso</th>
+                                                                    <th>Unidades</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="tbody_unidades">
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <!-- Dark table end -->
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="userAdminTab" role="tabpanel" aria-labelledby="controles-tab">
+                                    <div class="tab-pane fade active show" id="rutasTab" role="tabpanel" aria-labelledby="rutas-tab">
+
+                                        <!-- Dark table start -->
+                                        <div class="col-12 mt-5" style="margin-top: 1.5rem !important;">
+                                            <div class="card">
+                                                <div class="card-body">
+
+                                                    <div class="container-table-header">
+
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalAddGrupo"><i class="ti-plus"></i> Agregar Administrativos</button>
+                                                        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                                                            <div class="btn-group mr-2" role="group" aria-label="First group">
+                                                                <button id="btn_info_administrativos" type="button" class="btn btn-info"><i class="fa fa-info"> Info.</i></button>
+                                                                <button id="btn_edit_administrativos" type="button" class="btn btn-primary"><i class="fa fa-edit"> Editar</i></button>
+                                                                <button id="btn_delete_administrativos" type="button" class="btn btn-danger"><i class="fa fa-close"> Eliminar</i></button>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <br>
+
+                                                    <div class="data-tables datatable-dark">
+                                                        <table id="dataTable5" class="text-center" style="width: 100% !important;">
+                                                            <thead class="text-capitalize">
+                                                                <tr>
+                                                                    <th>Código(Dni)</th>
+                                                                    <th>Nombres y Apellidos</th>
+                                                                    <th>Terminal Autori.</th>
+                                                                    <th>Usuario</th>
+                                                                    <th>Contraseña</th>
+                                                                    <!--<th>Acciones</th>-->
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="tbody_unidades">
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <!-- Dark table end -->
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="choferesCobradoresTab" role="tabpanel" aria-labelledby="controles-tab">
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta doloribus, ullam, ut obcaecati laboriosam eos, officia dolores voluptatum quas impedit placeat cumque animi quos odio quibusdam voluptatibus magnam
                                         minima facilis necessitatibus libero! Error velit veritatis veniam ipsa? Reiciendis quas qui neque atque repudiandae quidem incidunt, a consectetur ipsam impedit.
                                     </p>
                                 </div>
-                                <!--<div class="tab-pane fade" id="controlesTab" role="tabpanel" aria-labelledby="controles-tab">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta doloribus, ullam, ut obcaecati laboriosam eos, officia dolores voluptatum quas impedit placeat cumque animi quos odio quibusdam voluptatibus magnam
-                                        minima facilis necessitatibus libero! Error velit veritatis veniam ipsa? Reiciendis quas qui neque atque repudiandae quidem incidunt, a consectetur ipsam impedit.
-                                    </p>
-                                </div>-->
                             </div>
+
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <!------------------------------------ MODALES ------------------------------------->
 
+            <!-- Modal AGREGAR NUEVA  UNIDAD -->
+            <div class="modal fade" id="exampleModalAddUnidad" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
 
-                <!-- Modal AGREGAR NUEVA  UNIDAD -->
-                <div class="modal fade" id="exampleModalAddUnidad" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="exampleModalLabel">Registro Vehicular</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="exampleModalLabel">Registro Vehicular</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                         aria-hidden="true">&times;</span>
                                 </button>
-                            </div>
+                        </div>
 
-                            <div class="modal-body">
+                        <div class="modal-body">
 
-                                <form class="needs-validation" novalidate="">
+                            <form class="needs-validation" novalidate="">
 
-                                    <div class="form-row">
-                                        <div class="col-md-4 mb-3">
-                                            <label for="validationCustom01">Código/Alias Vehículo</label>
-                                            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required="">
-                                            <div class="valid-feedback">
-                                                Looks good!
-                                            </div>
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom01">Código/Alias Vehículo</label>
+                                        <input type="text" class="form-control" id="id_add_codigo_unidad" placeholder="Código unidad" value="" required="true">
+                                        <div class="valid-feedback">
+                                            Looks good!
                                         </div>
-                                        <div class="col-md-4 mb-3">
-                                            <label for="validationCustom02">Serie</label>
-                                            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required="">
-                                            <div class="valid-feedback">
-                                                Looks good!
-                                            </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom02">Serie</label>
+                                        <input type="text" class="form-control" id="id_add_serie_unidad" placeholder="# Serie" value="" required="true">
+                                        <div class="valid-feedback">
+                                            Looks good!
                                         </div>
-                                        <div class="col-md-4 mb-3">
-                                            <label for="validationCustom02">Placa</label>
-                                            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required="">
-                                            <div class="valid-feedback">
-                                                Looks good!
-                                            </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom02">Placa</label>
+                                        <input type="text" class="form-control" id="id_add_placa_unidad" placeholder="ABC-589" value="" required="">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom03">Numero de SIM</label>
+                                        <input type="text" class="form-control" id="id_add_sim_unidad" placeholder="098#######" required="">
+                                        <div class="invalid-feedback">
+                                            Please provide a valid city.
                                         </div>
                                     </div>
 
-                                    <div class="form-row">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="validationCustom03">Numero de SIM</label>
-                                            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required="">
-                                            <div class="invalid-feedback">
-                                                Please provide a valid city.
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <label for="validationCustom04">Versión</label>
-                                            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required="">
-                                            <div class="invalid-feedback">
-                                                Please provide a valid state.
-                                            </div>
-                                        </div>
 
-                                        <div class="col-md-3 mb-3">
-                                            <label for="validationCustom05">Grupo</label>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom05">Grupo</label>
 
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
+                                        <select class="form-control" id="select_grupos_add_vehiculo">
+                                            
                                             </select>
 
-                                            <div class="invalid-feedback">
-                                                Please provide a valid zip.
-                                            </div>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid zip.
                                         </div>
                                     </div>
 
-                                    <div class="form-row">
-                                        <div class="col-md-6 mb-3">
-                                            <label for="validationCustom03">Descripción</label>
-                                            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required="">
-                                            <div class="invalid-feedback">
-                                                Please provide a valid city.
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <label for="validationCustom04">Dispositivo</label>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom05">Estado Vehicular</label>
 
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
+                                        <select class="form-control" id="id_estado_vehicular">
+                                            
                                             </select>
 
-                                            <div class="invalid-feedback">
-                                                Please provide a valid state.
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 mb-3">
-                                            <label for="validationCustom05">Estado Vehicular</label>
-
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-
-                                            <div class="invalid-feedback">
-                                                Please provide a valid zip.
-                                            </div>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid zip.
                                         </div>
                                     </div>
 
-                                    <div class="form-row form-row-center-vertical">
+                                </div>
 
-                                        <div class="col-md-6 mb-3">
+                                <div class="form-row">
+
+
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom03">Anotaciones</label>
+                                        <div class="input-group">
+                                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom02">Dispositivo</label>
+                                        <select type="text" class="form-control" id="id_tipos_dispositivos" value="" required=""></select>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4 mb-3">
+
+                                        <label for="validationCustom02">Opciones</label>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="id_add_check_informate">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                    Informante
+                                                </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="id_add_check_autodespacho">
+                                            <label class="form-check-label" for="defaultCheck2">
+                                                    Autodespacho
+                                                </label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!--<div class="form-row">
+
+                                        <div class="col-md-4 mb-3">
                                             <label for="validationCustom03">Anotaciones</label>
                                             <div class="input-group">
                                                 <textarea class="form-control" aria-label="With textarea"></textarea>
                                             </div>
                                         </div>
 
-                                        <div class="col-md-3 mb-3">
+
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationCustom02">Dispositivo</label>
+                                            <select type="text" class="form-control" id="id_tipos_dispositivos" value="" required="">
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 mb-3">
+
+                                            <label for="validationCustom02">Opciones</label>
+
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <input class="form-check-input" type="checkbox" value="" id="id_add_check_informate">
                                                 <label class="form-check-label" for="defaultCheck1">
                                                     Informante
                                                 </label>
                                             </div>
-                                        </div>
 
-                                        <div class="col-md-3 mb-3">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                <input class="form-check-input" type="checkbox" value="" id="id_add_check_autodespacho">
                                                 <label class="form-check-label" for="defaultCheck2">
                                                     Autodespacho
                                                 </label>
                                             </div>
+
+                                        </div>
+
+                                    </div>-->
+
+                            </form>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Guardar Unidad</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <!-- Modal EDITAR UNIDAD -->
+
+            <div class="modal fade" id="id_modal_editar_unidad" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="editarLabelUnidad">Unidad ####</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <form class="needs-validation" novalidate="">
+
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom01">Código/Alias Vehículo</label>
+                                        <input type="text" class="form-control" id="id_editar_codigo_unidad" placeholder="Código unidad" value="" required="true">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom02">Serie</label>
+                                        <input type="text" class="form-control" id="id_editar_serie_unidad" placeholder="# Serie" value="" required="true">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom02">Placa</label>
+                                        <input type="text" class="form-control" id="id_editar_placa_unidad" placeholder="ABC-589" value="" required="">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom03">Numero de SIM</label>
+                                        <input type="text" class="form-control" id="id_editar_sim_unidad" placeholder="098#######" required="">
+                                        <div class="invalid-feedback">
+                                            Please provide a valid city.
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom05">Grupo</label>
+
+                                        <select class="form-control" id="select_grupos_editar_vehiculo">
+                                            
+                                            </select>
+
+                                        <div class="invalid-feedback">
+                                            Please provide a valid zip.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom05">Estado Vehicular</label>
+
+                                        <select class="form-control" id="id_editar_estado_vehicular">
+                                            
+                                            </select>
+
+                                        <div class="invalid-feedback">
+                                            Please provide a valid zip.
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-row">
+
+
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom03">Anotaciones</label>
+                                        <div class="input-group">
+                                            <textarea id="id_editar_anotaciones" class="form-control" aria-label="With textarea"></textarea>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationCustom02">Dispositivo</label>
+                                        <select type="text" class="form-control" id="id_editar_tipos_dispositivos" value="" required=""></select>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-4 mb-3">
+
+                                        <label for="validationCustom02">Opciones</label>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="id_editar_check_informate">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                    Informante
+                                                </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="id_editar_check_autodespacho">
+                                            <label class="form-check-label" for="defaultCheck2">
+                                                    Autodespacho
+                                                </label>
                                         </div>
 
                                     </div>
-                                </form>
 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Guardar Unidad</button>
-                            </div>
+                                </div>
+
+
+                            </form>
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" id="save_update_unidad" class="btn btn-primary">Guardar Unidad</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Modal MORE INFORMACION -->
+
+
+            <div class="modal fade" id="id_modal_more_information" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
             </div>
+
+
+
         </div>
-        <!-- main content area end -->
+    </div>
+    <!-- main content area end -->
     </div>
     <!-- page container area end -->
     <!-- offset area start -->
@@ -791,6 +1078,7 @@
             </div>
         </div>
     </div>
+
     <!-- offset area end -->
     <!-- jquery latest version -->
     <script src="../assets/js/vendor/jquery-3.6.0.min.js "></script>
@@ -803,17 +1091,45 @@
     <script src="../assets/js/jquery.slicknav.min.js "></script>
 
 
+
     <!-- Start datatable js -->
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.dynamicTable-1.0.0.js"></script>
     <script src="../assets/js/plugins.js "></script>
     <script src="../assets/js/scripts.js "></script>
-
+    <script src="../assets/js/global/urls.js"></script>
     <script src="../assets/js/global/auto-timer.js"></script>
+    <script src="../assets/js/global/rest-globals.js"></script>
     <script src="../assets/js/unidades/unidades.js"></script>
+
+    <script>
+        async function d() {
+            console.log("grupos")
+            await readGrupos()
+            console.log("estados")
+            await readEstadosVehiculos()
+            console.log("tipos dispositivos")
+            await readDispositivos()
+            console.log("unidades")
+            readUnidades()
+            console.log("grupos list insert")
+            insertListGrupoHtml()
+
+            insertListEstadoVehicularHtml()
+
+            insertListTiposDispositivosHtml()
+        }
+
+        d()
+    </script>
+
+
+
+
 
 </body>
 

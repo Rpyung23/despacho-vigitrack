@@ -43,7 +43,6 @@ let panel_datos_html_lineas_rutas = ""
 let map;
 
 let list_objs_unidades_monitoreo = []
-let list_objs_unidades_monitoreo_auxiliar = []
 let list_objs_controles = []
 let bandera_centrar_mapa = true
 
